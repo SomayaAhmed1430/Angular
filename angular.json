@@ -32,9 +32,11 @@
               }
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.scss"
             ],
-            "scripts": [],
+
+
             "server": "src/main.server.ts",
             "outputMode": "server",
             "ssr": {
@@ -103,5 +105,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "f836cbc7-879b-4b0d-91d3-d80e51a8c0fd"
   }
 }
