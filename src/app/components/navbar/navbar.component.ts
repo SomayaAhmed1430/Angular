@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
+  logoUrl = 'imgs/Logo.svg';
 
 }
