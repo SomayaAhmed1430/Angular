@@ -1,0 +1,12 @@
+.product-img {
+  width: 100%;
+  height: 300px;
+  object-fit:unset;
+  border-bottom: 1px solid #ddd;
+}
+.card {
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: scale(1.03);
+  }
+}

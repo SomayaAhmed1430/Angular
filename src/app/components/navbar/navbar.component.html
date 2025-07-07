@@ -9,7 +9,7 @@
     </button>
 
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav main-menu">
         <li class="nav-item">
           <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
         </li>
@@ -21,6 +21,14 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" routerLink="/allproducts" routerLinkActive="active">All Products</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button">All Categories</a>
+          <ul class="dropdown-menu">
+            <li *ngFor="let cat of categories" (click)="goToCategory(cat)">
+              {{ cat }}
+            </li>
+          </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link" routerLink="/categories" routerLinkActive="active">Categories</a>
